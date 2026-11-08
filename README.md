@@ -106,49 +106,49 @@ Sorted descending by company size (valuation / enterprise value / annual revenue
 
 Self-hosted, community-driven, and developer-first Vendor Management, TPRM, and Supplier Governance software. 
 
-Sorted descending by GitHub star count:
+Sorted descending by GitHub Stars_Count:
 
-### 1. [Twenty CRM](https://github.com/twentyhq/twenty) [![GitHub Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers)
+### 1. [Twenty CRM](https://github.com/twentyhq/twenty) [![GitHub_Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers)
 * **Stack:** TypeScript / NestJS / React / PostgreSQL | **License:** AGPL-3.0
 * **Overview:** A modern, customizable open-source CRM with an extensible relational schema. Organizations leverage Twenty's custom entities, relations, and automation workflows to maintain centralized supplier registries, vendor contact directories, contract milestones, and procurement communication histories with complete API and webhook support.
 * **Best for:** Organizations needing a self-hosted, customizable relationship hub to manage suppliers and partner ecosystems alongside business contacts.
 
-### 2. [Dolibarr ERP / CRM](https://github.com/Dolibarr/dolibarr) [![GitHub Stars](https://img.shields.io/github/stars/Dolibarr/dolibarr?style=social&color=white)](https://github.com/Dolibarr/dolibarr/stargazers)
+### 2. [Dolibarr ERP / CRM](https://github.com/Dolibarr/dolibarr) [![GitHub_Stars](https://img.shields.io/github/stars/Dolibarr/dolibarr?style=social&color=white)](https://github.com/Dolibarr/dolibarr/stargazers)
 * **Stack:** PHP / MariaDB / PostgreSQL | **License:** GPL-3.0+
 * **Overview:** Comprehensive open-source ERP system featuring native supplier order tracking, supplier price lists, and vendor invoice management. Extended via ecosystem modules such as **Supplier Qualification Pro** (PanciucSoft) for weighted supplier evaluations, Approved Supplier Lists (ASL), certification expiry monitoring, supplier quality audits, and CAPA resolution tracking.
 * **Best for:** Small-to-medium enterprises wanting an integrated open-source ERP handling both purchasing workflows and formal vendor qualification records.
 
-### 3. [Probo](https://github.com/getprobo/probo) [![GitHub Stars](https://img.shields.io/github/stars/getprobo/probo?style=social&color=white)](https://github.com/getprobo/probo/stargazers)
+### 3. [Probo](https://github.com/getprobo/probo) [![GitHub_Stars](https://img.shields.io/github/stars/getprobo/probo?style=social&color=white)](https://github.com/getprobo/probo/stargazers)
 * **Stack:** Go / React / PostgreSQL / Docker | **License:** ISC
 * **Overview:** An open-source, self-hostable **Governance, Risk, and Compliance (GRC)** platform featuring a native **Vendor & Third-Party Risk (TPRM)** module. Provides vendor inventories, automated website security assessments, DPA/BAA artifact tracking, subprocessor discovery, immutable audit trails, and 270+ MCP tools for AI-agent automation.
 * **Best for:** Security and compliance engineering teams needing a self-hosted GRC platform with native vendor risk assessments and AI-agent automation.
 
-### 4. [ITFlow](https://github.com/itflow-org/itflow) [![GitHub Stars](https://img.shields.io/github/stars/itflow-org/itflow?style=social&color=white)](https://github.com/itflow-org/itflow/stargazers)
+### 4. [ITFlow](https://github.com/itflow-org/itflow) [![GitHub_Stars](https://img.shields.io/github/stars/itflow-org/itflow?style=social&color=white)](https://github.com/itflow-org/itflow/stargazers)
 * **Stack:** PHP / MySQL / Bootstrap | **License:** GPL-3.0
 * **Overview:** An open-source IT documentation, PSA, and asset management solution that integrates vendor tracking, IT contract renewal management, domain/SSL certificate expiration alerts, software license auditing, and client portal access in a unified self-hosted interface.
 * **Best for:** IT departments and MSPs needing streamlined tracking of technology vendors, SLAs, license counts, and recurring hardware/software agreements.
 
-### 5. [Leihs](https://github.com/leihs/leihs) [![GitHub Stars](https://img.shields.io/github/stars/leihs/leihs?style=social&color=white)](https://github.com/leihs/leihs/stargazers)
+### 5. [Leihs](https://github.com/leihs/leihs) [![GitHub_Stars](https://img.shields.io/github/stars/leihs/leihs?style=social&color=white)](https://github.com/leihs/leihs/stargazers)
 * **Stack:** Ruby on Rails / Clojure / React / PostgreSQL | **License:** AGPL-3.0
 * **Overview:** An open-source inventory management, equipment reservation, and procurement requisition platform. It allows organizations to track supplier procurement histories, asset assignments, and equipment lifecycles from initial vendor delivery through decommissioning.
 * **Best for:** Academic institutions, research labs, and media organizations managing equipment procurement requests and supplier asset accountability.
 
-### 6. [OpenGRC](https://github.com/LeeMangold/OpenGRC) [![GitHub Stars](https://img.shields.io/github/stars/LeeMangold/OpenGRC?style=social&color=white)](https://github.com/LeeMangold/OpenGRC/stargazers)
+### 6. [OpenGRC](https://github.com/LeeMangold/OpenGRC) [![GitHub_Stars](https://img.shields.io/github/stars/LeeMangold/OpenGRC?style=social&color=white)](https://github.com/LeeMangold/OpenGRC/stargazers)
 * **Stack:** Python / Django / SQLite / PostgreSQL | **License:** MIT
 * **Overview:** A lightweight, self-hosted GRC platform built for small-to-midsize security teams. Features vendor risk registers, security control mapping (ISO 27001, SOC 2, NIST CSF, HIPAA), third-party questionnaire management, and audit tracking without enterprise licensing fees.
 * **Best for:** Security practitioners needing a lightweight, framework-aligned third-party vendor risk assessment and control mapping tool.
 
-### 7. [Unicis Platform Community Edition](https://github.com/UnicisTech/unicis-platform-ce) [![GitHub Stars](https://img.shields.io/github/stars/UnicisTech/unicis-platform-ce?style=social&color=white)](https://github.com/UnicisTech/unicis-platform-ce/stargazers)
+### 7. [Unicis Platform Community Edition](https://github.com/UnicisTech/unicis-platform-ce) [![GitHub_Stars](https://img.shields.io/github/stars/UnicisTech/unicis-platform-ce?style=social&color=white)](https://github.com/UnicisTech/unicis-platform-ce/stargazers)
 * **Stack:** TypeScript / Vue.js / Node.js / Docker | **License:** AGPL-3.0
 * **Overview:** An open-source privacy and security governance platform engineered as an alternative to proprietary solutions like Vanta and OneTrust. Includes third-party vendor risk registers, DPIA/TIA records, GDPR/ISO 27001 compliance tracking, and vendor data processing oversight.
 * **Best for:** Privacy officers and security teams seeking open-source compliance automation and transparent vendor data transfer tracking.
 
-### 8. [LT-VRM](https://github.com/learntprm-design/lt-vrm) [![GitHub Stars](https://img.shields.io/github/stars/learntprm-design/lt-vrm?style=social&color=white)](https://github.com/learntprm-design/lt-vrm/stargazers)
+### 8. [LT-VRM](https://github.com/learntprm-design/lt-vrm) [![GitHub_Stars](https://img.shields.io/github/stars/learntprm-design/lt-vrm?style=social&color=white)](https://github.com/learntprm-design/lt-vrm/stargazers)
 * **Stack:** PHP / MySQL (XAMPP-ready) | **License:** MIT / Open Source
 * **Overview:** A dedicated open-source Third-Party Risk Management (TPRM) and Vendor Risk Management (VRM) platform designed for instant self-hosting. Includes vendor risk assessment questionnaires, 0–1000 risk scoring algorithms, contract repository, dark-web breach monitoring hooks, and an external vendor portal.
 * **Best for:** Risk teams seeking a focused, low-overhead PHP/MySQL vendor risk scoring tool without container or cloud orchestration requirements.
 
-### 9. [QMS / Supplier MCP Server](https://github.com/zavora-ai/mcp-qms) [![GitHub Stars](https://img.shields.io/github/stars/zavora-ai/mcp-qms?style=social&color=white)](https://github.com/zavora-ai/mcp-qms/stargazers)
+### 9. [QMS / Supplier MCP Server](https://github.com/zavora-ai/mcp-qms) [![GitHub_Stars](https://img.shields.io/github/stars/zavora-ai/mcp-qms?style=social&color=white)](https://github.com/zavora-ai/mcp-qms/stargazers)
 * **Stack:** Rust / Crates.io | **License:** Apache-2.0
 * **Overview:** An open-source Model Context Protocol (MCP) server providing 34+ structured tools for autonomous AI procurement agents. Capabilities include supplier lifecycle gating, qualification audits, quality scorecards, automated Supplier Corrective Action Requests (SCAR), and audit trail recording.
 * **Best for:** Developers and AI architects engineering autonomous agents for supplier evaluation, purchase order gating, and supply-chain quality control.
