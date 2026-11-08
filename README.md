@@ -106,7 +106,7 @@ Sorted descending by company size (valuation / enterprise value / annual revenue
 
 Self-hosted, community-driven, and developer-first Vendor Management, TPRM, and Supplier Governance software. 
 
-Sorted descending by GitHub Stars_Count:
+Sorted descending by GitHub_Stars_Count:
 
 ### 1. [Twenty CRM](https://github.com/twentyhq/twenty) [![GitHub_Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers)
 * **Stack:** TypeScript / NestJS / React / PostgreSQL | **License:** AGPL-3.0
