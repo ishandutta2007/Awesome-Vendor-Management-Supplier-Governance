@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b19" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0a192f" />
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.75" />
+    </linearGradient>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Filters for glows -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+    </filter>
+
+    <!-- Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.25" />
+    </pattern>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes floatSlow1 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(1deg); }
+      }
+      @keyframes floatSlow2 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(7px) rotate(-1deg); }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes beaconPing {
+        0% { r: 4; opacity: 1; }
+        100% { r: 18; opacity: 0; }
+      }
+
+      .pulse-orb {
+        transform-origin: center;
+        animation: pulseGlow 7s ease-in-out infinite;
+      }
+      .float-card1 {
+        animation: floatSlow1 6s ease-in-out infinite;
+      }
+      .float-card2 {
+        animation: floatSlow2 7s ease-in-out infinite;
+      }
+      .flow-line {
+        stroke-dasharray: 8 6;
+        animation: dashMove 12s linear infinite;
+      }
+      .flow-line-reverse {
+        stroke-dasharray: 8 6;
+        animation: dashMove 16s linear infinite reverse;
+      }
+      .radar-arm {
+        transform-origin: 1040px 110px;
+        animation: radarSweep 8s linear infinite;
+      }
+      .ping {
+        animation: beaconPing 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Background Base -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <!-- 2. Animated Ambient Glow Orbs in Background -->
+  <g class="pulse-orb" opacity="0.4">
+    <circle cx="180" cy="100" r="140" fill="#38bdf8" filter="url(#softGlow)" />
+    <circle cx="1060" cy="300" r="160" fill="#818cf8" filter="url(#softGlow)" />
+    <circle cx="600" cy="380" r="130" fill="#0ea5e9" filter="url(#softGlow)" />
+  </g>
+
+  <!-- 3. Grid Overlay -->
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- 4. Dynamic Flow Connections (Background / Context Layer) -->
+  <g opacity="0.5">
+    <path class="flow-line" d="M 80 80 C 350 40, 450 160, 750 80 S 1050 120, 1150 70" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="flow-line-reverse" d="M 50 350 C 300 390, 500 290, 800 360 S 1080 320, 1170 360" fill="none" stroke="#818cf8" stroke-width="1.8" />
+  </g>
+
+  <!-- 5. Floating Dynamic Metric Cards (Placed at wings to keep center clear) -->
+  
+  <!-- Left Decorative Pill: Contract Compliance -->
+  <g class="float-card1">
+    <rect x="65" y="60" width="220" height="66" rx="14" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="95" cy="93" r="16" fill="#0284c7" fill-opacity="0.25" />
+    <!-- Checkmark / Shield icon -->
+    <path d="M 90 93 L 94 97 L 101 89" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="122" y="86" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">SLA COMPLIANCE</text>
+    <text x="122" y="107" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">99.8% Active</text>
+    <circle cx="265" cy="78" r="4" fill="#38bdf8" />
+    <circle cx="265" cy="78" class="ping" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+  </g>
+
+  <!-- Left Bottom Decorative Card: Vendor Lifecycle -->
+  <g class="float-card2">
+    <rect x="65" y="295" width="230" height="72" rx="14" fill="url(#cardGrad1)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="95" cy="331" r="16" fill="#6366f1" fill-opacity="0.25" />
+    <!-- Refresh/Lifecycle arrows -->
+    <path d="M 91 327 A 6 6 0 1 1 90 336 M 91 323 L 91 327 L 95 327" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="122" y="323" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">QUALIFICATION</text>
+    <text x="122" y="344" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Verified &amp; Audited</text>
+  </g>
+
+  <!-- Right Decorative Radar: TPRM & Risk Radar -->
+  <g class="float-card2">
+    <rect x="910" y="55" width="225" height="110" rx="14" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+    <!-- Mini radar circles -->
+    <circle cx="1040" cy="110" r="38" fill="none" stroke="#334155" stroke-width="1" />
+    <circle cx="1040" cy="110" r="24" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="3 3" />
+    <circle cx="1040" cy="110" r="10" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+    <!-- Radar beam -->
+    <g class="radar-arm">
+      <line x1="1040" y1="110" x2="1078" y2="110" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+      <polygon points="1040,110 1076,96 1078,110" fill="#38bdf8" fill-opacity="0.18" />
+    </g>
+    <!-- Blip -->
+    <circle cx="1052" cy="98" r="3.5" fill="#10b981" />
+    <circle cx="1052" cy="98" class="ping" fill="none" stroke="#10b981" stroke-width="1.5" />
+    <text x="930" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">TPRM MONITOR</text>
+    <text x="930" y="102" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Low Risk Tier</text>
+    <text x="930" y="140" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Continuous Scanning</text>
+  </g>
+
+  <!-- Right Decorative Pill: Procurement Stack -->
+  <g class="float-card1">
+    <rect x="910" y="295" width="225" height="72" rx="14" fill="url(#cardGrad1)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="942" cy="331" r="16" fill="#a855f7" fill-opacity="0.25" />
+    <!-- Stack / Blocks icon -->
+    <path d="M 934 329 L 942 324 L 950 329 L 942 334 Z M 934 335 L 942 340 L 950 335" fill="none" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="970" y="323" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">ECOSYSTEM</text>
+    <text x="970" y="344" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">SaaS &amp; Open Source</text>
+  </g>
+
+  <!-- 6. FOREGROUND CONTENT (Title, Subtitle, Badges) -->
+  <g id="foreground-content">
+    <!-- Top Pill / Badge -->
+    <g transform="translate(425, 48)">
+      <rect width="350" height="34" rx="17" fill="url(#badgeGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5" />
+      <circle cx="20" cy="17" r="4.5" fill="#38bdf8" />
+      <text x="36" y="22" fill="#bae6fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">CURATED ENTERPRISE DIRECTORY</text>
+    </g>
+
+    <!-- Main Title Line 1 -->
+    <text x="600" y="145" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">
+      Awesome Vendor Management
+    </text>
+
+    <!-- Main Title Line 2 with Gradient Accent -->
+    <text x="600" y="200" text-anchor="middle" fill="url(#primaryGlow)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5" filter="url(#glow)">
+      &amp; Supplier Governance
+    </text>
+
+    <!-- Subtitle Description -->
+    <text x="600" y="242" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400">
+      Enterprise SaaS &amp; Open-Source Solutions for Third-Party Risk,
+    </text>
+    <text x="600" y="268" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400">
+      Supplier Lifecycle, Qualification, Compliance &amp; Procurement
+    </text>
+
+    <!-- Feature Tag Badges at Bottom -->
+    <g transform="translate(340, 310)">
+      <!-- Tag 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="118" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="59" y="18" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">TPRM &amp; Risk</text>
+      </g>
+      <!-- Tag 2 -->
+      <g transform="translate(130, 0)">
+        <rect width="128" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="64" y="18" text-anchor="middle" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">Contract Intel</text>
+      </g>
+      <!-- Tag 3 -->
+      <g transform="translate(270, 0)">
+        <rect width="118" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="59" y="18" text-anchor="middle" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">Open Source</text>
+      </g>
+      <!-- Tag 4 -->
+      <g transform="translate(400, 0)">
+        <rect width="120" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="60" y="18" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">Compliance</text>
+      </g>
+    </g>
+  </g>
+</svg>

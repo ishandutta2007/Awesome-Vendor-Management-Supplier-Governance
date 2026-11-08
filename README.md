@@ -1,9 +1,13 @@
-# Awesome-Vendor-Management-Supplier-Governance
+<div align="center">
+
+![Awesome Vendor Management & Supplier Governance Banner](assets/banner.svg)
 
 # Awesome Vendor Management & Supplier Governance
 
 > A curated list of top Vendor Management and Supplier Governance platforms — both SaaS/Hosted commercial solutions and open-source alternatives for managing supplier risk, qualification, compliance, and third-party relationships.  
 > 🌟 Star this repo if you find it useful! 🌟
+
+</div>
 
 ---
 
